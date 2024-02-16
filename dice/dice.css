@@ -26,8 +26,15 @@ body{
     width: 50%;
 }
 
+.dice-part{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
 .img-dice{
-    border-radius: 24px;
+    border-radius: 26px;
+    border: 3px solid black;
     box-shadow: 0 15px 15px 2px #33333359;
 }
 
