@@ -57,7 +57,7 @@ button:hover {
   color: #5c42ad;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     body {
         padding-top: 0vh;
         font-size: 13px;

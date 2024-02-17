@@ -83,7 +83,7 @@ window.addEventListener("load", () => {
       winner(p1Result, p2Result)
     }
   }
-  // winner(p1Result,p2Result);
+  
   //---- בודק מי השחקן המנצח
 
 
