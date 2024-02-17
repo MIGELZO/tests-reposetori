@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        direction: rtl;
+      }
+    </style>
+    <script src="hotel.js"></script>
+    <title>hotel</title>
+  </head>
+  <body>
+    <form>
+      <h1>conversation:</h1>
+      <p>שלום מדבר נציג המלוניתת מה שמך בבקשה?:</p>
+      <input id="userName" type="text" placeholder="הזן את שמך כאן" />
+      <br /><br />
+      <p id="welcome"></p>
+      <select id="day">
+        <option value="">בחר אפשרות:</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      <br />
+      <p id="sumByDay">עלות יומות במלונית הינה 100 שקלים, ולכן תשלם רק:</p>
+      <br><br>
+      <p id="sumPlusPinuk">עלות ארוחת בוקר הינה 30 ש"ח, האם תרצה שנפנק אותך?</p>
+      <br>
+      <select id="pinuk">
+        <option value="">בחר אפשרות:</option>
+        <option value="yes">כן</option>
+        <option value="no">לא</option>
+      </select>
+      <p>סה"כ עלות לתשלום: 
+      </p>
+    </form>
+  </body>
+</html>
