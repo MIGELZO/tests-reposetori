@@ -8,17 +8,15 @@ body {
   );
   font-family: "poppins", sans-serif;
   text-align: center;
-  height: 100vh;
   position: relative;
-  overflow: hidden;
   color: #fff;
   padding-top: 10vh;
 }
 
 .dice {
-  display: block;
   position: relative;
   padding: 10px 180px;
+  height: 85vh;
 }
 
 .row {
@@ -66,9 +64,11 @@ button:hover {
       }
   .dice {
     padding: 0px 0px;
+    height: 100vh;
   }
   .dice-title{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.573);
   }
   .row {
     flex-direction: column;
@@ -77,7 +77,7 @@ button:hover {
     width: 100%;
   }
   #p1{
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   #p2{
     margin-bottom: 0px;
