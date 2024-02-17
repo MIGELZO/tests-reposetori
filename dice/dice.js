@@ -8,14 +8,18 @@ window.addEventListener("load", () => {
   let intervalId2;
   let p1Result = 0;
   let p2Result = 0;
-  let userTurne = 1;
+  let userTurn = 1;
   let counter = 0;
 
   function intervalFunc() {
-    if (userTurne === 1) {
+    if (userTurn === 1) {
       intervalId1 = setInterval(player1Turn, 100);
-    } else if (userTurne === 2) {
+      decision.innerHTML = "";
+      dice.innerHTML = "Player 2 turn";
+    } else if (userTurn === 2) {
       intervalId2 = setInterval(player2Turn, 100);
+      decision.innerHTML = "";
+      dice.innerHTML = "Player 1 turn";
     }
   }
 
@@ -44,7 +48,7 @@ window.addEventListener("load", () => {
       p1Result = dice1 + dice2;
       dice.disabled = false;
       timer = 30;
-      userTurne = 2;
+      userTurn = 2;
       counter++;
       winner(p1Result, p2Result)
     }
@@ -74,7 +78,7 @@ window.addEventListener("load", () => {
       p2Result = dice3 + dice4;
       dice.disabled = false;
       timer = 30;
-      userTurne = 1;
+      userTurn = 1;
       counter++;
       winner(p1Result, p2Result)
     }
@@ -87,10 +91,10 @@ window.addEventListener("load", () => {
     if(counter % 2 == 0){
       if (p1Result > p2Result) {
         decision.innerHTML = "The winner is Player 1";
-        userTurne = 1;
+        userTurn = 1;
       } else if (p1Result < p2Result) {
         decision.innerHTML = "The winner is Player 2";
-        userTurne = 2;
+        userTurn = 2;
       } else {
         decision.innerHTML = "Its a draw";
       }
