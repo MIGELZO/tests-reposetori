@@ -45,7 +45,6 @@ function showCountriesOnDocument(countries) {
     // country Currencie
     let currenciesTd = document.createElement("td");
     if (country.currencies) {
-      console.log("yay");
       let currencieShortName = Object.keys(country.currencies)[0];
       let currencieName = country.currencies[currencieShortName].name;
       let currencieSymbol = country.currencies[currencieShortName].symbol;
