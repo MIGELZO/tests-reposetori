@@ -9,6 +9,7 @@ let numRow = 1;
 function showCountriesOnDocument(countries) {
   let tableBody = document.getElementById("tableBody");
   countries.forEach((country) => {
+    // country list number
     let newTr = document.createElement("tr");
     let numTd = document.createElement("td");
     numTd.innerText = numRow;
